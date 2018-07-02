@@ -1,0 +1,22 @@
+def long2( s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        
+
+
+        position = 0
+        for i in range(0,len(s)-1):
+            for j in range(i + 1 ,len(s)):
+                if s[i]==s[j]:
+                    if (j-i) > position:#两个相同字幕位置的差
+                        position = j - i +1                    
+                        break
+                    else:
+                        break            
+        if position ==0:
+            position = len(s)
+
+        return position 
+               

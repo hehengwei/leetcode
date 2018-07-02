@@ -24,4 +24,4 @@ class Solution:
                     
                     return i,j
 					
-#20个测试过了19个，还有个不晓得是啥，尴尬。
+
